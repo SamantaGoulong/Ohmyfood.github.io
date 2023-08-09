@@ -50,4 +50,28 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+.navbarContent {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+.navbarContent .logoImage {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: blue;
+}
+.navbarContent .logoImage .logo {
+  width: 50%;
+}
+.navbarContent .searchContent {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: red;
 }/*# sourceMappingURL=main.css.map */
