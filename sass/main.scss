@@ -1,4 +1,5 @@
-    /* http://meyerweb.com/eric/tools/css/reset/ 
+   @import "_var";
+   /* http://meyerweb.com/eric/tools/css/reset/ 
        v2.0 | 20110126
        License: none (public domain)
     */
@@ -55,17 +56,22 @@
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 20px;
+   
         
         .logoImage {
+            width: 100%;
             display: flex;
             justify-content: center;
             padding: 10px;
-            background-color: blue;
+            margin-bottom: 5px;
+            background-color:$white;
+            box-shadow: 0px 6px 6px $dark-grey-header;
+           
         
-
-            .logo {
+            .logoHeader {
                     width: 50%;
             }
+                        
         }
 
         .searchContent {
@@ -73,7 +79,19 @@
             display: flex;
             justify-content: center;
             padding: 10px;
-            background-color: red;
+            background-color: $light-grey-header;
+            
+            .localisation-icone {
+                    color: $dark-grey;
+            }
+
+            input {
+                    border: none;
+                    background-color: $light-grey-header;
+                    text-align: center;
+                    color: $dark-grey;
+            
+            }
         }
 }
 

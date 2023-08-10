@@ -1,7 +1,8 @@
+/* Variables */
 /* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+    v2.0 | 20110126
+    License: none (public domain)
+ */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -60,12 +61,15 @@ table {
   margin-top: 20px;
 }
 .navbarContent .logoImage {
+  width: 100%;
   display: flex;
   justify-content: center;
   padding: 10px;
-  background-color: blue;
+  margin-bottom: 5px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 6px 6px #DBDBDB;
 }
-.navbarContent .logoImage .logo {
+.navbarContent .logoImage .logoHeader {
   width: 50%;
 }
 .navbarContent .searchContent {
@@ -73,5 +77,14 @@ table {
   display: flex;
   justify-content: center;
   padding: 10px;
-  background-color: red;
+  background-color: #EAEAEA;
+}
+.navbarContent .searchContent .localisation-icone {
+  color: #353535;
+}
+.navbarContent .searchContent input {
+  border: none;
+  background-color: #EAEAEA;
+  text-align: center;
+  color: #353535;
 }/*# sourceMappingURL=main.css.map */
