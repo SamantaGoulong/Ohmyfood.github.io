@@ -1,0 +1,14 @@
+// Mixins
+
+@mixin gradientButton{
+        border-radius: 30px;
+        border: none;
+        width: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 50px;
+        background: linear-gradient($pink, $purple);
+        color: $white;
+        font-weight: 600;
+        font-size: 14px;
+}
