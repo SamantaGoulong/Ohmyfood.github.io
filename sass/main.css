@@ -115,6 +115,7 @@ table {
   text-align: center;
 }
 .underNav .underNavButton {
+  text-decoration: none;
   margin-top: 20px;
   margin-bottom: 30px;
   border-radius: 30px;
@@ -127,4 +128,39 @@ table {
   color: #FFFFFF;
   font-weight: 600;
   font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.fonctionnement {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 10px;
+}
+.fonctionnement .fonctionnementTitle {
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.fonctionnement .fonctionnementButton {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.fonctionnement .fonctionnementButton a {
+  text-decoration: none;
+  background-color: #F6F6F6;
+  width: 90%;
+  height: 60px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #000000;
+  font-weight: bold;
+  font-size: 15px;
+}
+.fonctionnement .fonctionnementButton a .fonctionnementIcone {
+  padding-right: 30px;
+  color: #353535;
 }/*# sourceMappingURL=main.css.map */
