@@ -56,6 +56,8 @@
 font-family: $Roboto; 
 }
 
+// Debut header
+
 .navbarContent {
    width: 100%;
     display: flex;
@@ -132,45 +134,94 @@ font-family: $Roboto;
        align-items: center;
     }
 }
+// fin header
 
+// debut section fonctionnement
 .fonctionnement{
     margin-top: 50px;
     margin-bottom: 50px;
-    margin-left: 10px;
-
+  
 
     .fonctionnementTitle{
-    margin-bottom: 30px;
     font-size: 20px;
     font-weight: bold;
+    margin-left: 10px;
+    
     }
 
-    .fonctionnementButton{
+    .fonctionnementButton{ 
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        // flex-direction: column;
+        flex-direction: column;
         align-items: center;
-    
+        
+        .number {
+                background-color: $purple;
+                width: 25px;
+                height: 25px;
+                border-radius: 50px;
+                color: $white;
+                font-size: 14px;
+                border: none;
+                position: relative;
+                top: 45px;
+                right: 140px;
+        }
 
-        a {
-            text-decoration: none;
-            background-color: $light-grey;
+        .btnFonctionnement{
             width: 90%;
             height: 60px;
             border-radius: 20px;
-            margin-bottom: 20px;
-            text-align: center;
             color: $dark;
+            background-color: $light-grey;
             font-weight: bold;
             font-size: 15px;
-
+            border: none;
+            box-shadow: 5px 10px 15px $dark-grey-header;
+            
             .fonctionnementIcone {
                     padding-right: 30px;
                     color: $dark-grey;
-            
+                    
             }
         }
     }
 }
+// fin section fonctionnement
+
+// début section restaurants
+
+
+// fin section restaurants
+
+// début footer
+footer{
+    width: 100%;
+    background-color: $dark-grey;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-top: 25px;
+    font-size: 13px;
+
+    .logoFooter{ 
+       width: 25%; 
+       margin-bottom: 20px;
+    }
+
+    .lienFooter{
+      text-decoration: none;
+      color: $white;  
+      margin-bottom: 10px;
+    
+      .fa-utensils{
+        margin-right: 15px;
+      }
+
+      .fa-handshake-angle{
+        margin-right: 10px;
+      }
+    }
+}
+// fin footer
+
     

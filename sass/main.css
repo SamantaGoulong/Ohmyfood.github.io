@@ -135,32 +135,66 @@ table {
 .fonctionnement {
   margin-top: 50px;
   margin-bottom: 50px;
-  margin-left: 10px;
 }
 .fonctionnement .fonctionnementTitle {
-  margin-bottom: 30px;
   font-size: 20px;
   font-weight: bold;
+  margin-left: 10px;
 }
 .fonctionnement .fonctionnementButton {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
-.fonctionnement .fonctionnementButton a {
-  text-decoration: none;
-  background-color: #F6F6F6;
+.fonctionnement .fonctionnementButton .number {
+  background-color: #9356DC;
+  width: 25px;
+  height: 25px;
+  border-radius: 50px;
+  color: #FFFFFF;
+  font-size: 14px;
+  border: none;
+  position: relative;
+  top: 45px;
+  right: 140px;
+}
+.fonctionnement .fonctionnementButton .btnFonctionnement {
   width: 90%;
   height: 60px;
   border-radius: 20px;
-  margin-bottom: 20px;
-  text-align: center;
   color: #000000;
+  background-color: #F6F6F6;
   font-weight: bold;
   font-size: 15px;
+  border: none;
+  box-shadow: 5px 10px 15px #DBDBDB;
 }
-.fonctionnement .fonctionnementButton a .fonctionnementIcone {
+.fonctionnement .fonctionnementButton .btnFonctionnement .fonctionnementIcone {
   padding-right: 30px;
   color: #353535;
+}
+
+footer {
+  width: 100%;
+  background-color: #353535;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-top: 25px;
+  font-size: 13px;
+}
+footer .logoFooter {
+  width: 25%;
+  margin-bottom: 20px;
+}
+footer .lienFooter {
+  text-decoration: none;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+footer .lienFooter .fa-utensils {
+  margin-right: 15px;
+}
+footer .lienFooter .fa-handshake-angle {
+  margin-right: 10px;
 }/*# sourceMappingURL=main.css.map */
