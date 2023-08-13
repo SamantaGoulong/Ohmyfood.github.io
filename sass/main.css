@@ -174,13 +174,69 @@ table {
   color: #353535;
 }
 
-footer {
+.restaurants {
+  background-color: #F6F6F6;
+  padding-top: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 40px;
+}
+.restaurants .buttonNew {
+  border: none;
+  color: #008766;
+  font-weight: bold;
+  background-color: #99E2D0;
+  position: relative;
+  top: 40px;
+  left: 200px;
+  border-radius: 2px;
+  height: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.restaurants .restaurantsTitle {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.restaurants .restaurantCard {
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  height: 220px;
+}
+.restaurants .restaurantCard .restaurantsImage {
   width: 100%;
+  height: 150px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.restaurants .restaurantCard .subTitleRestaurants {
+  margin-top: 10px;
+  margin-left: 5px;
+}
+.restaurants .restaurantCard .textRestaurants {
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.restaurants .restaurantCard .heartCard {
+  border: none;
+  background-color: #FFFFFF;
+  position: relative;
+  bottom: 30px;
+  left: 240px;
+  font-size: 20px;
+}
+
+footer {
   background-color: #353535;
   display: flex;
   flex-direction: column;
   padding-left: 20px;
   padding-top: 25px;
+  padding-bottom: 10px;
   font-size: 13px;
 }
 footer .logoFooter {
