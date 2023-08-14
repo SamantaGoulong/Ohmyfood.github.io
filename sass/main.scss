@@ -74,6 +74,11 @@ font-family: $Roboto;
             background-color:$white;
             box-shadow: 0px 6px 6px $dark-grey-header;
            
+            @media (min-width: 1024px) {
+                width: auto;
+                box-shadow: none;
+            }
+
                 .logoHeader {
                         width: 50%;
                 }
@@ -111,6 +116,13 @@ font-family: $Roboto;
     width: 100%;
     background-color: $light-grey;
     padding-bottom: 20px;
+
+    @media (min-width: 1024px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
         h1{
             margin-top: 30px; 
             margin-left: 50px;
@@ -118,6 +130,10 @@ font-family: $Roboto;
             font-weight: bold;
             font-size: 20px;
             text-align: center;
+
+            @media (min-width: 1024px) {
+                    font-size: 30px;
+                }
         }
 
         .underNavText{
@@ -130,8 +146,17 @@ font-family: $Roboto;
             margin-top: 20px;
             margin-bottom: 30px;
             @include gradientButton;
-        display: flex;
-        align-items: center;
+            display: flex;
+            align-items: center;
+
+            @media (min-width: 1024px) {
+                   width: auto;
+                   margin: 0;
+                   margin-top: 20px;
+                   display:flex ;
+                   align-items: center;
+                   justify-content: center;
+                }
         }
 }
 // fin header
@@ -140,12 +165,22 @@ font-family: $Roboto;
 .fonctionnement{
     margin-top: 50px;
     margin-bottom: 50px;
+
+    @media (min-width: 1024px) {
+         margin-left: 150px; 
+         margin-right: 150px;
+        }
   
 
     .fonctionnementTitle{
     font-size: 20px;
     font-weight: bold;
     margin-left: 10px;
+
+    @media (min-width: 1024px) {
+            margin-bottom: 20px;
+            margin-left: 25px;
+        }
     
     }
 
@@ -153,6 +188,11 @@ font-family: $Roboto;
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        @media (min-width: 1024px) {
+                display: flex;
+                flex-direction: row; 
+            }
         
         .number {
                 background-color: $purple;
@@ -165,6 +205,13 @@ font-family: $Roboto;
                 position: relative;
                 top: 45px;
                 right: 140px;
+        
+                @media (min-width: 1024px) {
+                        position: relative;
+                        left: 15px ; top: 0px;
+                        width: 65px;
+                        height: 30px;
+                    }
         }
 
         .btnFonctionnement{
@@ -195,6 +242,13 @@ padding-left: 15px;
 padding-right: 15px;
 padding-bottom: 40px;
 
+// .test{
+// @media (min-width: 1024px) {
+//         display: flex;
+//         flex-wrap: wrap;
+//         justify-content: center;
+//     }}
+
     .buttonNew{
         border: none;
         color: $dark-green;
@@ -212,6 +266,11 @@ padding-bottom: 40px;
         font-size: 20px;
         font-weight: bold;
         margin-bottom: 20px;
+
+        @media (min-width: 1024px) {
+                width: 100%;
+                margin-left: 160px;
+            }
     }
 
     .restaurantCard{
@@ -260,25 +319,51 @@ footer{
     padding-bottom: 10px;
     font-size: 13px;
 
-    .logoFooter{ 
-       width: 25%; 
-       margin-bottom: 20px;
+    @media (min-width: 1024px) {
+        display: flex;
+        flex-direction: row-reverse;
     }
-
-    .lienFooter{
-      text-decoration: none;
-      color: $white;  
-      margin-bottom: 10px;
     
-      .fa-utensils{
-        margin-right: 15px;
-      }
+    .logoFooter{ 
+        width: 25%; 
+        margin-bottom: 20px;
 
-      .fa-handshake-angle{
-        margin-right: 10px;
-      }
+        @media (min-width: 1024px) {
+            width: 10%;
+            margin-top: 20px;
+            margin-right: 50px;
+        }
     }
+    .lienFoot{
+        display: flex;
+        flex-direction: column;
+        
+        @media (min-width: 1024px) {
+                display: flex;
+                flex-direction: row;
+                margin-top: 30px;
+                margin-right: 50px;
+        }
+
+        .lienFooter{
+            text-decoration: none;
+            color: $white;  
+            margin-bottom: 10px;
+
+            @media (min-width: 1024px) {
+                margin-right: 20px;
+            }
+        
+            .fa-utensils{
+                margin-right: 15px;
+            }
+
+            .fa-handshake-angle{
+                margin-right: 10px;
+            }
+        }
+    }        
 }
 // fin footer
 
-    
+//  
