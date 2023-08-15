@@ -148,6 +148,12 @@ table {
   font-size: 14px;
   display: flex;
   align-items: center;
+  box-shadow: 5px 10px 15px #DBDBDB;
+  transition-property: transform;
+  transition-duration: 400ms;
+}
+.underNav .underNavButton:hover {
+  transform: scale(1.15);
 }
 @media (min-width: 1024px) {
   .underNav .underNavButton {
@@ -236,18 +242,15 @@ table {
   padding-right: 15px;
   padding-bottom: 40px;
 }
-.restaurants .buttonNew {
-  border: none;
-  color: #008766;
-  font-weight: bold;
-  background-color: #99E2D0;
-  position: relative;
-  top: 40px;
-  left: 200px;
-  border-radius: 2px;
-  height: 25px;
-  padding-left: 10px;
-  padding-right: 10px;
+@media (min-width: 1024px) {
+  .restaurants {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 0;
+  }
 }
 .restaurants .restaurantsTitle {
   font-size: 20px;
@@ -260,35 +263,80 @@ table {
     margin-left: 160px;
   }
 }
-.restaurants .restaurantCard {
+.restaurants .lienRestaurantsCard {
+  text-decoration: none;
+  color: #000000;
+}
+@media (min-width: 1024px) {
+  .restaurants .lienRestaurantsCard {
+    width: 45%;
+    margin-bottom: 30px;
+  }
+}
+.restaurants .lienRestaurantsCard .restaurantCard {
   background-color: #FFFFFF;
   border-radius: 20px;
   margin-bottom: 15px;
   height: 220px;
 }
-.restaurants .restaurantCard .restaurantsImage {
+.restaurants .lienRestaurantsCard .restaurantCard .restaurantsImage {
   width: 100%;
   height: 150px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   -o-object-fit: cover;
      object-fit: cover;
+  position: relative;
 }
-.restaurants .restaurantCard .subTitleRestaurants {
+.restaurants .lienRestaurantsCard .restaurantCard .buttonNew {
+  border: none;
+  color: #008766;
+  font-weight: bold;
+  background-color: #99E2D0;
+  border-radius: 2px;
+  height: 25px;
+  padding-left: 10px;
+}
+.restaurants .lienRestaurantsCard .restaurantCard .buttonNew1 {
+  position: absolute;
+  right: 35px;
+  margin-top: 15px;
+}
+@media (min-width: 1024px) {
+  .restaurants .lienRestaurantsCard .restaurantCard .buttonNew1 {
+    right: 55%;
+  }
+}
+.restaurants .lienRestaurantsCard .restaurantCard .buttonNew2 {
+  position: absolute;
+  right: 35px;
+  margin-top: 15px;
+}
+@media (min-width: 1024px) {
+  .restaurants .lienRestaurantsCard .restaurantCard .buttonNew2 {
+    right: 16%;
+  }
+}
+.restaurants .lienRestaurantsCard .restaurantCard .subTitleRestaurants {
   margin-top: 10px;
   margin-left: 5px;
 }
-.restaurants .restaurantCard .textRestaurants {
+.restaurants .lienRestaurantsCard .restaurantCard .textRestaurants {
   margin-top: 5px;
   margin-left: 5px;
 }
-.restaurants .restaurantCard .heartCard {
+.restaurants .lienRestaurantsCard .restaurantCard .heartCard {
   border: none;
   background-color: #FFFFFF;
   position: relative;
   bottom: 30px;
   left: 240px;
   font-size: 20px;
+}
+@media (min-width: 1024px) {
+  .restaurants .lienRestaurantsCard .restaurantCard .heartCard {
+    left: 90%;
+  }
 }
 
 footer {
