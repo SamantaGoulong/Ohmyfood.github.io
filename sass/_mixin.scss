@@ -53,6 +53,8 @@
 @mixin restaurantsImage{
         width: 100%;
         height: 230px;
+        position: relative;
+        top: 25px;
 }
 
 @mixin menu{
@@ -63,7 +65,8 @@
                         padding-left: 10px;
                         padding-right: 10px;
                         position: relative;
-                        bottom: 50px;
+                        // bottom: 50px;
+                        
         
                         h1 {
                                 font-family: $Shrikhand;
@@ -80,6 +83,9 @@
         
                         .subTitleRestaurants {
                                 padding-top: 40px;
+                                padding-bottom: 7px;
+                                border-bottom: solid 3px $light-green ;
+                                width: 13%;
                         }
         
                         #starter {

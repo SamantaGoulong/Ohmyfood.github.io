@@ -61,10 +61,6 @@ table {
     font-family: $Roboto;
 }
 
-main{
-    height: 1300px;
-}
-
 .navbarContent{
     @include navbarContent;
 }
@@ -81,4 +77,3 @@ footer{
     @include footer;
     // background-color: red;
 }
-
