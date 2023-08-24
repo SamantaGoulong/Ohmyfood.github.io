@@ -70,6 +70,9 @@ table {
   .navbarContent {
     width: auto;
     box-shadow: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 .navbarContent .fa-arrow-left {
@@ -77,18 +80,31 @@ table {
   font-size: 20px;
   font-weight: 900;
 }
+@media (min-width: 1024px) {
+  .navbarContent .fa-arrow-left {
+    position: relative;
+    right: 650px;
+  }
+}
 .navbarContent .logoHeader {
-  width: 60%;
+  width: 150px;
 }
 
-.restaurantsImage {
+@media (min-width: 1024px) {
+  main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+main .restaurantsImage {
   width: 100%;
   height: 230px;
   position: relative;
   top: 25px;
 }
-
-.menu {
+main .menu {
   background-color: #F6F6F6;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
@@ -96,14 +112,32 @@ table {
   padding-right: 10px;
   position: relative;
 }
-.menu h1 {
+@media (min-width: 1024px) {
+  main .menu {
+    width: 70%;
+    margin-left: 150px;
+    margin-right: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+main .menu h1 {
   font-family: "Shrikhand", cursive;
   font-size: 24px;
   padding-top: 10px;
   position: relative;
   top: 23px;
 }
-.menu .heartCard {
+@media (min-width: 1024px) {
+  main .menu h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    padding-top: 20px;
+  }
+}
+main .menu .heartCard {
   border: none;
   background-color: #F6F6F6;
   position: absolute;
@@ -111,27 +145,35 @@ table {
   font-size: 20px;
 }
 @media (min-width: 1024px) {
-  .menu .heartCard {
-    left: 90%;
+  main .menu .heartCard {
+    font-size: 50px;
+    left: 65%;
+    top: 33px;
   }
 }
-.menu .subTitleRestaurants {
+main .menu .subTitleRestaurants {
+  width: 13%;
   padding-top: 40px;
   padding-bottom: 7px;
   border-bottom: solid 3px #99E2D0;
-  width: 13%;
 }
-.menu #starter {
+@media (min-width: 1024px) {
+  main .menu .subTitleRestaurants {
+    font-size: 30px;
+    width: 8%;
+  }
+}
+main .menu #starter {
   padding-top: 60px;
 }
-.menu .lienMenuRestaurants {
+main .menu .lienMenuRestaurants {
   text-decoration: none;
   color: #000000;
   width: 90%;
   height: 100%;
   border-radius: 15px;
 }
-.menu .lienMenuRestaurants .MenuCard {
+main .menu .lienMenuRestaurants .MenuCard {
   width: 100%;
   height: 65px;
   border-radius: 15px;
@@ -139,24 +181,45 @@ table {
   margin-top: 20px;
   box-shadow: 5px 10px 15px #DBDBDB;
 }
-.menu .lienMenuRestaurants .MenuCard .TitleMenuCard {
+@media (min-width: 1024px) {
+  main .menu .lienMenuRestaurants .MenuCard {
+    width: 850PX;
+  }
+}
+main .menu .lienMenuRestaurants .MenuCard .TitleMenuCard {
   padding: 10px 15px;
 }
-.menu .lienMenuRestaurants .MenuCard .subTitleMenuCard {
+@media (min-width: 1024px) {
+  main .menu .lienMenuRestaurants .MenuCard .TitleMenuCard {
+    font-size: 20px;
+  }
+}
+main .menu .lienMenuRestaurants .MenuCard .subTitleMenuCard {
   padding: 0px 10px 10px 15px;
   font-size: 13px;
 }
-.menu .lienMenuRestaurants .MenuCard .subTitleMenuCard .priceMenu {
+@media (min-width: 1024px) {
+  main .menu .lienMenuRestaurants .MenuCard .subTitleMenuCard {
+    font-size: 15px;
+  }
+}
+main .menu .lienMenuRestaurants .MenuCard .subTitleMenuCard .priceMenu {
   font-weight: bold;
   position: absolute;
   right: 20px;
 }
-.menu .orderButton {
+@media (min-width: 1024px) {
+  main .menu .lienMenuRestaurants .MenuCard .subTitleMenuCard .priceMenu {
+    font-size: 20px;
+    right: 450px;
+  }
+}
+main .menu .orderButton {
   padding: 40px;
   display: flex;
   justify-content: center;
 }
-.menu .orderButton .linkButton {
+main .menu .orderButton .linkButton {
   border-radius: 30px;
   border: none;
   width: auto;
@@ -173,16 +236,6 @@ table {
   align-items: center;
   box-shadow: 5px 10px 15px #DBDBDB;
   text-decoration: none;
-}
-@media (min-width: 1024px) {
-  .menu .orderButton .linkButton {
-    width: auto;
-    margin: 0;
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
 }
 
 footer {

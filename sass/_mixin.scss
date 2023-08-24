@@ -32,232 +32,233 @@
         margin-top: 20px;          
         padding: 10px;
         margin-bottom: 5px;
-        background-color:$white;
+        background-color:aqua;}
                         
         
-        @media (min-width: 1024px) {
-                width: auto;
-                box-shadow: none;
-        }
-        .fa-arrow-left{
-                color: $dark;
-                font-size: 20px;
-                font-weight: 900;
-        }
+//         @media (min-width: 1024px) {
+//                 width: auto;
+//                 box-shadow: none;
+//         }
+//         .fa-arrow-left{
+//                 color: $dark;
+//                 font-size: 20px;
+//                 font-weight: 900;
+//         }
 
-        .logoHeader {
-                width: 60%;
-        }
-}
+//         .logoHeader {
+//                 width: 60%;
+//         }
+// }
 
-@mixin restaurantsImage{
-        width: 100%;
-        height: 230px;
-        position: relative;
-        top: 25px;
-}
+// @mixin restaurantsImage{
+//         width: 100%;
+//                 height: 230px;
+//                 position: relative;
+//                 top: 25px;
+        
+//         }
 
-@mixin menu{
+// @mixin menu{
       
-                        background-color: $light-grey;
-                        border-top-left-radius: 30px;
-                        border-top-right-radius: 30px;
-                        padding-left: 10px;
-                        padding-right: 10px;
-                        position: relative;
-                        // bottom: 50px;
+                        // background-color: $light-grey;
+                        // border-top-left-radius: 30px;
+                        // border-top-right-radius: 30px;
+                        // padding-left: 10px;
+                        // padding-right: 10px;
+                        // position: relative;
+                        // // bottom: 50px;
                         
         
-                        h1 {
-                                font-family: $Shrikhand;
-                                font-size: 24px;
-                                padding-top: 10px;
-                                position: relative;
-                                top: 23px;
-                        }
+                        // h1 {
+                        //         font-family: $Shrikhand;
+                        //         font-size: 24px;
+                        //         padding-top: 10px;
+                        //         position: relative;
+                        //         top: 23px;
+                        // }
         
-                        .heartCard {
-                                @include heartCard;
+                        // .heartCard {
+                        //         @include heartCard;
         
-                        }
+                        // }
         
-                        .subTitleRestaurants {
-                                padding-top: 40px;
-                                padding-bottom: 7px;
-                                border-bottom: solid 3px $light-green ;
-                                width: 13%;
-                        }
+                        // .subTitleRestaurants {
+                        //         padding-top: 40px;
+                        //         padding-bottom: 7px;
+                        //         border-bottom: solid 3px $light-green ;
+                        //         width: 13%;
+                        // }
         
-                        #starter {
-                                padding-top: 60px;
-                        }
+                        // #starter {
+                        //         padding-top: 60px;
+                        // }
         
-                        .lienMenuRestaurants {
-                                text-decoration: none;
-                                color: $dark;
-                                width: 90%;
-                                height: 100%;
-                                border-radius: 15px;
+                        // .lienMenuRestaurants {
+                        //         text-decoration: none;
+                        //         color: $dark;
+                        //         width: 90%;
+                        //         height: 100%;
+                        //         border-radius: 15px;
         
-                                .MenuCard {
-                                        width: 100%;
-                                        height: 65px;
-                                        border-radius: 15px;
-                                        background-color: $white;
-                                        margin-top: 20px;
-                                        box-shadow: 5px 10px 15px $dark-grey-header;
+                        //         .MenuCard {
+                        //                 width: 100%;
+                        //                 height: 65px;
+                        //                 border-radius: 15px;
+                        //                 background-color: $white;
+                        //                 margin-top: 20px;
+                        //                 box-shadow: 5px 10px 15px $dark-grey-header;
         
-                                        .TitleMenuCard {
-                                                padding: 10px 15px;
-                                        }
+                        //                 .TitleMenuCard {
+                        //                         padding: 10px 15px;
+                        //                 }
         
-                                        .subTitleMenuCard {
-                                                padding: 0px 10px 10px 15px;
-                                                font-size: 13px;
+                        //                 .subTitleMenuCard {
+                        //                         padding: 0px 10px 10px 15px;
+                        //                         font-size: 13px;
         
-                                                .priceMenu {
-                                                        font-weight: bold;
-                                                        position: absolute;
-                                                        right: 20px;
-                                                }
-                                        }
-                                }
-                        }
+                        //                         .priceMenu {
+                        //                                 font-weight: bold;
+                        //                                 position: absolute;
+                        //                                 right: 20px;
+                        //                         }
+                        //                 }
+                        //         }
+                        // }
         
-                        .orderButton {
-                                @include orderButton;
+                        // .orderButton {
+                        //         @include orderButton;
         
-                                .linkButton {
-                                        @include linkButton;
+                        //         .linkButton {
+                        //                 @include linkButton;
         
-                                }
-                        }
-                }
+                        //         }
+                        // }
+                // }
 
-@mixin heartCard{
-        border: none;
-        background-color: $light-grey;
-        position: absolute;
-        left: 270px;
-        font-size: 20px;
+// @mixin heartCard{
+//         border: none;
+//         background-color: $light-grey;
+//         position: absolute;
+//         left: 270px;
+//         font-size: 20px;
         
-        @media (min-width: 1024px) {
-                left: 90%;
-                }
-}
+//         @media (min-width: 1024px) {
+//                 left: 90%;
+//                 }
+// }
 
-@mixin lienMenuCard{
-        .lienMenuRestaurants {
-                text-decoration: none;
-                color: $dark;
-                width: 90%;
-                border-radius: 15px;
+// @mixin lienMenuCard{
+//         .lienMenuRestaurants {
+//                 text-decoration: none;
+//                 color: $dark;
+//                 width: 90%;
+//                 border-radius: 15px;
         
-                .MenuCard {
-                        width: 100%;
-                        height: 65px;
-                        border-radius: 15px;
-                        background-color: $white;
-                        margin-top: 20px;
-                        box-shadow: 5px 10px 15px $dark-grey-header;
+//                 .MenuCard {
+//                         width: 100%;
+//                         height: 65px;
+//                         border-radius: 15px;
+//                         background-color: $white;
+//                         margin-top: 20px;
+//                         box-shadow: 5px 10px 15px $dark-grey-header;
         
-                        .TitleMenuCard {
-                        padding: 10px 15px;
+//                         .TitleMenuCard {
+//                         padding: 10px 15px;
 
-                        }
+//                         }
         
-                        .subTitleMenuCard {
-                                padding: 0px 10px 10px 15px;
-                                font-size: 14px;
+//                         .subTitleMenuCard {
+//                                 padding: 0px 10px 10px 15px;
+//                                 font-size: 14px;
         
-                                .priceMenu {
-                                        position: absolute;
-                                        right: 15px;
-                                        font-weight: bold;
-                                }
-                         }
-                }
-        }
-}
+//                                 .priceMenu {
+//                                         position: absolute;
+//                                         right: 15px;
+//                                         font-weight: bold;
+//                                 }
+//                          }
+//                 }
+//         }
+// }
 
-@mixin orderButton{
-        padding: 40px;
-        display: flex;
-        justify-content: center;
-}
+// @mixin orderButton{
+//         padding: 40px;
+//         display: flex;
+//         justify-content: center;
+// }
 
-@mixin linkButton{
-        @include gradientButton;
-        width: 70%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        box-shadow: 5px 10px 15px $dark-grey-header;
-        text-decoration: none;       
+// @mixin linkButton{
+//         @include gradientButton;
+//         width: 70%;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         box-shadow: 5px 10px 15px $dark-grey-header;
+//         text-decoration: none;       
 
-        @media (min-width: 1024px) {
-                width: auto;
-                margin: 0;
-                margin-top: 20px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-        }
-}
+//         @media (min-width: 1024px) {
+//                 width: auto;
+//                 margin: 0;
+//                 margin-top: 20px;
+//                 display: flex;
+//                 align-items: center;
+//                 justify-content: center;
+//         }
+// }
 
-@mixin footer {
-        background-color: $dark-grey;
-        display: flex;
-        flex-direction: column;
-        padding-left: 20px;
-        padding-top: 25px;
-        padding-bottom: 10px;
-        font-size: 13px;
+// @mixin footer {
+//         background-color: $dark-grey;
+//         display: flex;
+//         flex-direction: column;
+//         padding-left: 20px;
+//         padding-top: 25px;
+//         padding-bottom: 10px;
+//         font-size: 13px;
 
-        @media (min-width: 1024px) {
-                display: flex;
-                flex-direction: row-reverse;
-        }
+//         @media (min-width: 1024px) {
+//                 display: flex;
+//                 flex-direction: row-reverse;
+//         }
 
-        .logoFooter {
-                width: 30%;
-                margin-bottom: 20px;
+//         .logoFooter {
+//                 width: 30%;
+//                 margin-bottom: 20px;
 
-                @media (min-width: 1024px) {
-                        width: 10%;
-                        margin-top: 20px;
-                        margin-right: 50px;
-                }
-        }
+//                 @media (min-width: 1024px) {
+//                         width: 10%;
+//                         margin-top: 20px;
+//                         margin-right: 50px;
+//                 }
+//         }
 
-        .lienFoot {
-                display: flex;
-                flex-direction: column;
+//         .lienFoot {
+//                 display: flex;
+//                 flex-direction: column;
 
-                @media (min-width: 1024px) {
-                        display: flex;
-                        flex-direction: row;
-                        margin-top: 30px;
-                        margin-right: 50px;
-                }
+//                 @media (min-width: 1024px) {
+//                         display: flex;
+//                         flex-direction: row;
+//                         margin-top: 30px;
+//                         margin-right: 50px;
+//                 }
 
-                .lienFooter {
-                        // width: 100%;
-                        text-decoration: none;
-                        color: $white;
-                        margin-bottom: 10px;
+//                 .lienFooter {
+//                         // width: 100%;
+//                         text-decoration: none;
+//                         color: $white;
+//                         margin-bottom: 10px;
 
-                        @media (min-width: 1024px) {
-                                margin-right: 20px;
-                        }
+//                         @media (min-width: 1024px) {
+//                                 margin-right: 20px;
+//                         }
 
-                        .fa-utensils {
-                                margin-right: 15px;
-                        }
+//                         .fa-utensils {
+//                                 margin-right: 15px;
+//                         }
 
-                        .fa-handshake-angle {
-                                margin-right: 10px;
-                        }
-                }
-        }
-}
+//                         .fa-handshake-angle {
+//                                 margin-right: 10px;
+//                         }
+//                 }
+//         }
+// }
