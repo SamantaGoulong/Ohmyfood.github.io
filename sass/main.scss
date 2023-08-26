@@ -174,22 +174,16 @@ font-family: $Roboto;
     margin-top: 50px;
     margin-bottom: 50px;
 
-    @media (min-width: 1024px) {
-         margin-left: 150px; 
-         margin-right: 150px;
-        }
+     @media (min-width: 1024px) {
+    padding-left: 100px;
+    padding-right: 100px;
+    }
   
 
     .fonctionnementTitle{
     font-size: 20px;
     font-weight: bold;
     margin-left: 10px;
-
-    @media (min-width: 1024px) {
-            margin-bottom: 20px;
-            margin-left: 25px;
-        }
-    
     }
 
     .fonctionnementButton{ 
@@ -200,6 +194,7 @@ font-family: $Roboto;
         @media (min-width: 1024px) {
                 display: flex;
                 flex-direction: row; 
+                padding-top: 30px;
             }
         
         .number {
@@ -215,11 +210,8 @@ font-family: $Roboto;
                 right: 140px;
         
                 @media (min-width: 1024px) {
-                        position: relative;
-                        left: 15px ; top: 0px;
-                        width: 65px;
-                        height: 30px;
-                    }
+                    left: 15px ; top: 0px;
+                }
         }
 
         .btnFonctionnement{
@@ -233,6 +225,10 @@ font-family: $Roboto;
             border: none;
             box-shadow: 5px 10px 15px $dark-grey-header;
             
+            @media (min-width: 1024px) {
+                    width: 33%;
+                }
+
             .fonctionnementIcone {
                 padding-right: 30px;
                 color: $dark-grey;      
@@ -267,7 +263,6 @@ padding-bottom: 40px;
 
         @media (min-width: 1024px) {
                 width: 100%;
-                margin-left: 160px;
             }
     }
     .lienRestaurantsCard {
@@ -295,37 +290,15 @@ padding-bottom: 40px;
             
             }
             .buttonNew {
-                // border: none;
-                // color: $dark-green;
-                // font-weight: bold;
-                // background-color: $light-green;
-              
-                // border-radius: 2px;
-                // height: 25px;
-                // padding-left: 10px;
-                // padding-right: 10px;
-                @include buttonNew
-            }
-
-            .buttonNew1{
+                @include buttonNew;
                 position: absolute;
-                    right: 35px;
-                    margin-top: 15px;
-
-                @media (min-width: 1024px) {
-                    right: 55%;
-                        // right: 570px;
-                    }
+                right: 35px;
+                margin-top: 15px;
             }
-            .buttonNew2{
-                position: absolute;
-                    right: 35px;
-                    margin-top: 15px;
                 @media (min-width: 1024px) {
-                        // right: 170px;
-                        right: 16%;
+                    position: relative;
                 }
-            }
+
             .subTitleRestaurants{
                 margin-top: 10px;
                 margin-left: 5px;   

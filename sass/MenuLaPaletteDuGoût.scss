@@ -87,7 +87,8 @@ table {
 
         @media (min-width: 1024px) {
             position: relative;
-            right: 650px;
+            right: 400px;
+           
         }
     }
     
@@ -106,7 +107,7 @@ main {
     
     .restaurantsImage {
         width: 100%;
-        height: 230px;
+        height: 250px;
         position: relative;
         top: 25px;
     }
@@ -114,13 +115,20 @@ main {
    
         // }
 
-    .menu {
+    .menu { 
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+        position: relative;
         background-color: $light-grey;
         border-top-left-radius: 30px;
         border-top-right-radius: 30px;
         padding-left: 10px;
         padding-right: 10px;
-        position: relative;
+        
+       
+        
         // bottom: 50px;
         @media (min-width: 1024px) {
             width: 70%;
@@ -135,8 +143,9 @@ main {
             font-family: $Shrikhand;
             font-size: 24px;
             padding-top: 10px;
-            position: relative;
-            top: 23px;
+            width: 70%;
+            // position: relative;
+            // top: 23px;
 
             @media (min-width: 1024px) {
                 display: flex;
@@ -147,15 +156,21 @@ main {
         }
 
         .heartCard {
+            width: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center ;
+            width: 20%;
+            // justify-content: flex-end;
             border: none;
-            background-color: $light-grey;
-            position: absolute;
-            left: 270px;
+            background-color:red;
+            // position: absolute;
+            // left: 270px;
             font-size: 20px;
             
             @media (min-width: 1024px) {
                 font-size: 50px;
-                left: 65%;
+                left: 85%;
                 top: 33px;
             }
         }
@@ -197,7 +212,7 @@ main {
                     box-shadow: 5px 10px 15px $dark-grey-header;
 
                     @media (min-width: 1024px) {
-                        width: 850PX;
+                        width: 550px;
                     }
 
                     .TitleMenuCard {
@@ -223,7 +238,7 @@ main {
 
                             @media (min-width: 1024px) {
                                 font-size: 20px;
-                                right: 450px;
+                                right: 15%;
                             }
                         }
                     }
@@ -235,8 +250,6 @@ main {
               display: flex;
               justify-content: center;
     
-              
-    
             .linkButton {
                 @include gradientButton;
                 width: 70%;
@@ -246,8 +259,9 @@ main {
                 box-shadow: 5px 10px 15px $dark-grey-header;
                 text-decoration: none;
     
-                // @media (min-width: 1024px) {
-                // }
+                @media (min-width: 1024px) {
+                    width: 150px;
+                }
             }
         }
     }     

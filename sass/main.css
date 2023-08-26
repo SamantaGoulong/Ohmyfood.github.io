@@ -172,20 +172,14 @@ table {
 }
 @media (min-width: 1024px) {
   .fonctionnement {
-    margin-left: 150px;
-    margin-right: 150px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
 }
 .fonctionnement .fonctionnementTitle {
   font-size: 20px;
   font-weight: bold;
   margin-left: 10px;
-}
-@media (min-width: 1024px) {
-  .fonctionnement .fonctionnementTitle {
-    margin-bottom: 20px;
-    margin-left: 25px;
-  }
 }
 .fonctionnement .fonctionnementButton {
   display: flex;
@@ -196,6 +190,7 @@ table {
   .fonctionnement .fonctionnementButton {
     display: flex;
     flex-direction: row;
+    padding-top: 30px;
   }
 }
 .fonctionnement .fonctionnementButton .number {
@@ -212,11 +207,8 @@ table {
 }
 @media (min-width: 1024px) {
   .fonctionnement .fonctionnementButton .number {
-    position: relative;
     left: 15px;
     top: 0px;
-    width: 65px;
-    height: 30px;
   }
 }
 .fonctionnement .fonctionnementButton .btnFonctionnement {
@@ -229,6 +221,11 @@ table {
   font-size: 15px;
   border: none;
   box-shadow: 5px 10px 15px #DBDBDB;
+}
+@media (min-width: 1024px) {
+  .fonctionnement .fonctionnementButton .btnFonctionnement {
+    width: 33%;
+  }
 }
 .fonctionnement .fonctionnementButton .btnFonctionnement .fonctionnementIcone {
   padding-right: 30px;
@@ -260,7 +257,6 @@ table {
 @media (min-width: 1024px) {
   .restaurants .restaurantsTitle {
     width: 100%;
-    margin-left: 160px;
   }
 }
 .restaurants .lienRestaurantsCard {
@@ -296,25 +292,13 @@ table {
   border-radius: 2px;
   height: 25px;
   padding-left: 10px;
-}
-.restaurants .lienRestaurantsCard .restaurantCard .buttonNew1 {
   position: absolute;
   right: 35px;
   margin-top: 15px;
 }
 @media (min-width: 1024px) {
-  .restaurants .lienRestaurantsCard .restaurantCard .buttonNew1 {
-    right: 55%;
-  }
-}
-.restaurants .lienRestaurantsCard .restaurantCard .buttonNew2 {
-  position: absolute;
-  right: 35px;
-  margin-top: 15px;
-}
-@media (min-width: 1024px) {
-  .restaurants .lienRestaurantsCard .restaurantCard .buttonNew2 {
-    right: 16%;
+  .restaurants .lienRestaurantsCard .restaurantCard {
+    position: relative;
   }
 }
 .restaurants .lienRestaurantsCard .restaurantCard .subTitleRestaurants {
