@@ -18,6 +18,20 @@
 </head>
 
 <body>
+<!-- Début animation loader-->
+    <div class="loader">
+        <div class="animation">
+            <div class="ball"><i class="fa-solid fa-bowl-food"></i></div>
+            <div class="ball"><i class="fa-solid fa-burger"></i></div>
+            <div class="ball"><i class="fa-solid fa-pizza-slice"></i></div>
+            <div class="ball"><i class="fa-solid fa-cheese"></i></div>
+            <div class="ball"><i class="fa-solid fa-hotdog"></i></div>
+               <div class="ball"><i class="fa-solid fa-ice-cream"></i></div>
+        </div>
+        <div class="text">Chargement...</div>
+    </div>
+<!-- Fin animation loader -->
+
     <div class="main-container">
 <!-- Début header -->
         <header class="navbar">
@@ -36,13 +50,14 @@
 <!-- Fin header -->
 
 <!-- Début sous-nav -->
-        <!-- <main> -->
+        <main>
             <section class="underNav">
                 <h1>Réservez le menu qui vous convient</h1>
                 <p class="underNavText">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
                 <a href="#" class="underNavButton">Explorer nos restaurants</a>
             </section>
 <!-- Fin sous-nav -->
+
 <!-- Début section fonctionnement -->
             <section class="fonctionnement">
                 <h2 class="fonctionnementTitle">Fonctionnement</h2>
@@ -67,7 +82,11 @@
                         <button class="buttonNew buttonNew1">Nouveau</button>
                         <h3 class="subTitleRestaurants">La palette du goût</h3>
                         <p class="textRestaurants">Ménilmontant</p>
-                        <button class="heartCard"><i class="fa-regular fa-heart"></i></button>
+                        <div class="heartCard">
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        
                     </article>
                 </a>
                 <a href="LaNoteEnchantée.html" class="lienRestaurantsCard">
@@ -100,7 +119,7 @@
                 </a>
                 
             </section>
-        <!-- </main> -->
+        </main>
 <!-- Fin section restaurant -->
 
 <!-- Début footer -->

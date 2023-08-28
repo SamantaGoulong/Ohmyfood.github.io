@@ -56,6 +56,76 @@ table {
   font-family: "Roboto", sans empattement;
 }
 
+.loader {
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(to top, #9356DC 10%, #FF79DA 90%);
+  z-index: 2;
+  animation-name: loader;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+.loader .animation {
+  display: flex;
+  margin-bottom: 5px;
+}
+.loader .animation .ball {
+  font-size: 20px;
+  color: rgb(83, 11, 197);
+  animation: bounce 1s infinite;
+}
+.loader .animation .ball:not(:last-child) {
+  margin-right: 20px;
+}
+.loader .animation .ball:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.loader .animation .ball:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.loader .animation .ball:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.loader .animation .ball:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.loader .animation .ball:nth-child(6) {
+  animation-delay: 0.5s;
+}
+.loader .text {
+  font-size: 30px;
+  color: #FFFFFF;
+}
+
+@keyframes loader {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(-100%);
+  }
+  50% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
 .navbarContent {
   width: 100%;
   display: flex;
@@ -231,6 +301,9 @@ table {
   padding-right: 30px;
   color: #353535;
 }
+.fonctionnement .fonctionnementButton .btnFonctionnement .fonctionnementIcone:hover {
+  color: #9356DC;
+}
 
 .restaurants {
   background-color: #F6F6F6;
@@ -310,15 +383,24 @@ table {
   margin-left: 5px;
 }
 .restaurants .lienRestaurantsCard .restaurantCard .heartCard {
+  display: flex;
+}
+.restaurants .lienRestaurantsCard .restaurantCard .heartCard .fa-solid {
+  position: absolute;
+  left: 260px;
+}
+.restaurants .lienRestaurantsCard .restaurantCard .heartCard .fa-regular {
+  position: relative;
+  left: 245px;
+  z-index: 1;
+}
+.restaurants .lienRestaurantsCard .restaurantCard .heartCard .fa-heart {
   border: none;
   background-color: #FFFFFF;
-  position: relative;
-  bottom: 30px;
-  left: 240px;
   font-size: 20px;
 }
 @media (min-width: 1024px) {
-  .restaurants .lienRestaurantsCard .restaurantCard .heartCard {
+  .restaurants .lienRestaurantsCard .restaurantCard .heartCard .fa-heart {
     left: 90%;
   }
 }

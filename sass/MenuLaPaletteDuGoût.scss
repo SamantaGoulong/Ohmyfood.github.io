@@ -117,9 +117,7 @@ main {
 
     .menu { 
         display: flex;
-        justify-content: flex-start;
         flex-direction: column;
-        flex-wrap: wrap;
         position: relative;
         background-color: $light-grey;
         border-top-left-radius: 30px;
@@ -127,54 +125,50 @@ main {
         padding-left: 10px;
         padding-right: 10px;
         
-       
-        
-        // bottom: 50px;
+        @media (min-width: 768px){
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+
         @media (min-width: 1024px) {
             width: 70%;
             margin-left: 150px;
             margin-right: 150px;
-            display: flex;
-            flex-direction: column;
             align-items: center;
         }
 
-        h1 {
-            font-family: $Shrikhand;
-            font-size: 24px;
-            padding-top: 10px;
-            width: 70%;
-            // position: relative;
-            // top: 23px;
-
-            @media (min-width: 1024px) {
-                display: flex;
-                justify-content: center;
-                font-size: 50px;
-                padding-top: 20px;
-            }
-        }
-
-        .heartCard {
-            width: 10%;
+        .titleHeart{ 
             display: flex;
             justify-content: center;
-            align-items: center ;
-            width: 20%;
-            // justify-content: flex-end;
-            border: none;
-            background-color:red;
-            // position: absolute;
-            // left: 270px;
-            font-size: 20px;
-            
-            @media (min-width: 1024px) {
-                font-size: 50px;
-                left: 85%;
-                top: 33px;
+            margin-top: 30px;
+
+            h1 {
+                font-family: $Shrikhand;
+                font-size: 24px;
+                
+
+                @media (min-width: 1024px) {
+                    // width: 90%;
+                    font-size: 30px;
+                    font-weight: 500;
+                    padding-top: 20px;
+                }
+            }
+
+            .heartCard {
+                border: none;
+                background-color:$light-grey;
+                font-size: 20px;
+                margin-left: 20px;
+              
+                
+                @media (min-width: 1024px) {
+                    font-size: 30px;
+                    //£+7margin-left: 20px;
+                    margin-top: 13px;
+                }
             }
         }
-       
             .subTitleRestaurants {
                 width: 13%;
                 padding-top: 40px;
@@ -183,13 +177,9 @@ main {
                 
                 @media (min-width: 1024px) {
                     // padding-left: 150px;
-                    font-size: 30px;
+                    //font-size: 1px;
                     width: 8%;
                 }
-            }
-
-            #starter {
-                padding-top: 60px;
             }
 
             .lienMenuRestaurants {

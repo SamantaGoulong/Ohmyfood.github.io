@@ -106,9 +106,7 @@ main .restaurantsImage {
 }
 main .menu {
   display: flex;
-  justify-content: flex-start;
   flex-direction: column;
-  flex-wrap: wrap;
   position: relative;
   background-color: #F6F6F6;
   border-top-left-radius: 30px;
@@ -116,45 +114,46 @@ main .menu {
   padding-left: 10px;
   padding-right: 10px;
 }
+@media (min-width: 768px) {
+  main .menu {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
 @media (min-width: 1024px) {
   main .menu {
     width: 70%;
     margin-left: 150px;
     margin-right: 150px;
-    display: flex;
-    flex-direction: column;
     align-items: center;
   }
 }
-main .menu h1 {
+main .menu .titleHeart {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+main .menu .titleHeart h1 {
   font-family: "Shrikhand", cursive;
   font-size: 24px;
-  padding-top: 10px;
-  width: 70%;
 }
 @media (min-width: 1024px) {
-  main .menu h1 {
-    display: flex;
-    justify-content: center;
-    font-size: 50px;
+  main .menu .titleHeart h1 {
+    font-size: 30px;
+    font-weight: 500;
     padding-top: 20px;
   }
 }
-main .menu .heartCard {
-  width: 10%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 20%;
+main .menu .titleHeart .heartCard {
   border: none;
-  background-color: red;
+  background-color: #F6F6F6;
   font-size: 20px;
+  margin-left: 20px;
 }
 @media (min-width: 1024px) {
-  main .menu .heartCard {
-    font-size: 50px;
-    left: 85%;
-    top: 33px;
+  main .menu .titleHeart .heartCard {
+    font-size: 30px;
+    margin-top: 13px;
   }
 }
 main .menu .subTitleRestaurants {
@@ -165,12 +164,8 @@ main .menu .subTitleRestaurants {
 }
 @media (min-width: 1024px) {
   main .menu .subTitleRestaurants {
-    font-size: 30px;
     width: 8%;
   }
-}
-main .menu #starter {
-  padding-top: 60px;
 }
 main .menu .lienMenuRestaurants {
   text-decoration: none;
