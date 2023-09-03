@@ -103,6 +103,8 @@ main .restaurantsImage {
   height: 250px;
   position: relative;
   top: 25px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 main .menu {
   display: flex;
@@ -181,39 +183,76 @@ main .menu .lienMenuRestaurants .MenuCard {
   background-color: #FFFFFF;
   margin-top: 20px;
   box-shadow: 5px 10px 15px #DBDBDB;
+  display: flex;
+  align-items: center;
+}
+main .menu .lienMenuRestaurants .MenuCard:hover .check {
+  width: 30%;
+}
+main .menu .lienMenuRestaurants .MenuCard:active .check {
+  width: 30%;
 }
 @media (min-width: 1024px) {
   main .menu .lienMenuRestaurants .MenuCard {
     width: 550px;
   }
 }
-main .menu .lienMenuRestaurants .MenuCard .TitleMenuCard {
+main .menu .lienMenuRestaurants .MenuCard .textMenuCard {
+  width: 70%;
+}
+main .menu .lienMenuRestaurants .MenuCard .textMenuCard .TitleMenuCard {
   padding: 10px 15px;
 }
 @media (min-width: 1024px) {
-  main .menu .lienMenuRestaurants .MenuCard .TitleMenuCard {
+  main .menu .lienMenuRestaurants .MenuCard .textMenuCard .TitleMenuCard {
     font-size: 20px;
   }
 }
-main .menu .lienMenuRestaurants .MenuCard .subTitleMenuCard {
+main .menu .lienMenuRestaurants .MenuCard .textMenuCard .subTitleMenuCard {
   padding: 0px 10px 10px 15px;
   font-size: 13px;
 }
 @media (min-width: 1024px) {
-  main .menu .lienMenuRestaurants .MenuCard .subTitleMenuCard {
+  main .menu .lienMenuRestaurants .MenuCard .textMenuCard .subTitleMenuCard {
     font-size: 15px;
   }
 }
-main .menu .lienMenuRestaurants .MenuCard .subTitleMenuCard .priceMenu {
+main .menu .lienMenuRestaurants .MenuCard .price {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .menu .lienMenuRestaurants .MenuCard .price .priceMenu {
   font-weight: bold;
-  position: absolute;
-  right: 20px;
 }
 @media (min-width: 1024px) {
-  main .menu .lienMenuRestaurants .MenuCard .subTitleMenuCard .priceMenu {
+  main .menu .lienMenuRestaurants .MenuCard .price .priceMenu {
     font-size: 20px;
-    right: 15%;
   }
+}
+main .menu .lienMenuRestaurants .MenuCard .check {
+  width: 0%;
+  height: 100%;
+  background-color: #99E2D0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: all 500ms;
+}
+main .menu .lienMenuRestaurants .MenuCard .check .fa-check {
+  width: 25px;
+  height: 25px;
+  font-size: 20px;
+  color: #99E2D0;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 main .menu .orderButton {
   padding: 40px;
@@ -238,7 +277,7 @@ main .menu .orderButton .linkButton {
   box-shadow: 5px 10px 15px #DBDBDB;
   text-decoration: none;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   main .menu .orderButton .linkButton {
     width: 150px;
   }

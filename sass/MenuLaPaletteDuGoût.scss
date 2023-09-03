@@ -110,10 +110,11 @@ main {
         height: 250px;
         position: relative;
         top: 25px;
+        object-fit: cover;
     }
-        //  @media (min-width: 1024px) {
-   
-        // }
+          //@media (min-width: 1024px) {
+            //height: 350px;
+         //}
 
     .menu { 
         display: flex;
@@ -200,36 +201,80 @@ main {
                     background-color: $white;
                     margin-top: 20px;
                     box-shadow: 5px 10px 15px $dark-grey-header;
-
+                    display: flex;
+                    align-items: center;
+                    //justify-content: center;
+                &:hover {
+                        .check {
+                            width: 30%;
+                        }
+                    }
+                &:active {
+                    .check {
+                        width: 30%;
+                    }
+                }
                     @media (min-width: 1024px) {
                         width: 550px;
                     }
+                    .textMenuCard{ 
+                        width: 70%;
 
-                    .TitleMenuCard {
-                        padding: 10px 15px;
-
-                        @media (min-width: 1024px) {
-                            font-size: 20px;
-                        }
-                    }
-
-                    .subTitleMenuCard {
-                        padding: 0px 10px 10px 15px;
-                        font-size: 13px;
-
-                        @media (min-width: 1024px) {
-                                font-size: 15px;
-                            }
-
-                        .priceMenu {
-                            font-weight: bold;
-                            position: absolute;
-                            right: 20px;
+                        .TitleMenuCard {
+                            padding: 10px 15px;
 
                             @media (min-width: 1024px) {
                                 font-size: 20px;
-                                right: 15%;
                             }
+                        }
+
+                        .subTitleMenuCard {
+                            padding: 0px 10px 10px 15px;
+                            font-size: 13px;
+
+                            @media (min-width: 1024px) {
+                                    font-size: 15px;
+                            }
+                        }
+                    }
+
+                    .price{
+                        width: 30%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .priceMenu {
+                            font-weight: bold;
+                
+                            @media (min-width: 1024px) {
+                                font-size: 20px;
+                            }
+                        }
+                    }
+
+                    .check{
+                        width: 0%;
+                        height: 100%;
+                        background-color: $light-green;
+                        border-top-right-radius: 15px;
+                        border-bottom-right-radius: 15px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        overflow: hidden;
+                        transition: all 500ms;
+
+                    
+                        .fa-check {
+                            width: 25px;
+                            height: 25px;
+                            font-size: 20px;
+                            color: $light-green;
+                            background-color: $white;
+                            border-radius: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
                         }
                     }
                 }
@@ -249,7 +294,7 @@ main {
                 box-shadow: 5px 10px 15px $dark-grey-header;
                 text-decoration: none;
     
-                @media (min-width: 1024px) {
+                @media (min-width: 768px) {
                     width: 150px;
                 }
             }
