@@ -111,11 +111,11 @@ main {
         position: relative;
         top: 25px;
         object-fit: cover;
+   
+          @media (min-width: 1024px) {
+            height: 450px;
+         }
     }
-          //@media (min-width: 1024px) {
-            //height: 350px;
-         //}
-
     .menu { 
         display: flex;
         flex-direction: column;
@@ -149,24 +149,85 @@ main {
                 
 
                 @media (min-width: 1024px) {
-                    // width: 90%;
                     font-size: 30px;
                     font-weight: 500;
                     padding-top: 20px;
                 }
             }
 
-            .heartCard {
-                border: none;
-                background-color:$light-grey;
-                font-size: 20px;
-                margin-left: 20px;
+            // .heartCard {
+            //     border: none;
+            //     background-color:$light-grey;
+            //     font-size: 20px;
+            //     margin-left: 20px;
               
                 
-                @media (min-width: 1024px) {
-                    font-size: 30px;
-                    //£+7margin-left: 20px;
-                    margin-top: 13px;
+            //     @media (min-width: 1024px) {
+            //         font-size: 30px;
+            //         //£+7margin-left: 20px;
+            //         margin-top: 13px;
+            //     }
+            // }
+            .heartCard {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-bottom: 20px;
+            
+                .fa-regular {
+                    position: relative;
+                    z-index: 1;
+                    left: 20px;
+                    &:hover {
+                        opacity: 0;
+                    }
+            
+                    &:active {
+                        opacity: 0;
+                    }
+            
+                    @media (min-width: 1024px) {
+                        position: relative;       
+                        top: 20px;
+                        
+                    }
+                }
+            
+                .fa-solid {
+                    position: relative;
+                    background: linear-gradient($pink, $purple);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+            
+                    &:hover {
+                        opacity: 1;
+                    }
+            
+                    &:active {
+                        opacity: 1;
+                    }
+            
+                    @media (min-width: 1024px) {
+                        position: relative;
+                        
+                        top: 20px;
+                        right: 10px;
+                        //left: 20px;
+                    }
+                }
+            
+                .fa-heart {
+                    border: none;
+                    background-color: $white;
+                    font-size: 20px;
+            
+                    @media (min-width: 1024px) {
+                        // left: 90%;
+                        
+
+                        font-size: 30px;
+                    }
                 }
             }
         }
@@ -176,9 +237,7 @@ main {
                 padding-bottom: 7px;
                 border-bottom: solid 3px $light-green ;
                 
-                @media (min-width: 1024px) {
-                    // padding-left: 150px;
-                    //font-size: 1px;
+                @media (min-width: 768px) {
                     width: 8%;
                 }
             }
@@ -219,10 +278,16 @@ main {
                     }
                     .textMenuCard{ 
                         width: 70%;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+
 
                         .TitleMenuCard {
                             padding: 10px 15px;
-
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
                             @media (min-width: 1024px) {
                                 font-size: 20px;
                             }
@@ -231,7 +296,9 @@ main {
                         .subTitleMenuCard {
                             padding: 0px 10px 10px 15px;
                             font-size: 13px;
-
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
                             @media (min-width: 1024px) {
                                     font-size: 15px;
                             }
@@ -291,8 +358,13 @@ main {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                box-shadow: 5px 10px 15px $dark-grey-header;
                 text-decoration: none;
+
+                &:hover {
+                        opacity: 0.85;
+                        transition: all 500ms;
+                        box-shadow: 2px 2px 15px 2px rgba(124, 124, 124, 0.692);
+                }
     
                 @media (min-width: 768px) {
                     width: 150px;

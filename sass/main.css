@@ -394,6 +394,12 @@ table {
   position: relative;
   z-index: 1;
 }
+.restaurants .lienRestaurantsCard .restaurantCard .heartCard .fa-regular:hover {
+  opacity: 0;
+}
+.restaurants .lienRestaurantsCard .restaurantCard .heartCard .fa-regular:active {
+  opacity: 0;
+}
 @media (min-width: 1024px) {
   .restaurants .lienRestaurantsCard .restaurantCard .heartCard .fa-regular {
     position: absolute;
@@ -402,10 +408,16 @@ table {
 .restaurants .lienRestaurantsCard .restaurantCard .heartCard .fa-solid {
   position: relative;
   right: 20px;
-  background-color: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(#FF79DA, #9356DC);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.restaurants .lienRestaurantsCard .restaurantCard .heartCard .fa-solid:hover {
+  opacity: 1;
+}
+.restaurants .lienRestaurantsCard .restaurantCard .heartCard .fa-solid:active {
+  opacity: 1;
 }
 @media (min-width: 1024px) {
   .restaurants .lienRestaurantsCard .restaurantCard .heartCard .fa-solid {

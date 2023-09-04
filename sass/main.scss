@@ -380,14 +380,15 @@ padding-bottom: 40px;
                 border-top-left-radius: 20px;
                 border-top-right-radius: 20px;
                 object-fit: cover;
-            
             }
+
             .buttonNew {
                 @include buttonNew;
                 position: absolute;
                 right: 35px;
                 margin-top: 15px;
             }
+
                 @media (min-width: 1024px) {
                     position: relative;
                 }
@@ -406,38 +407,51 @@ padding-bottom: 40px;
 
             .heartCard{ 
                 display: flex;
-                // width: 20%;
                 justify-content: center;
                 align-items: center;
                 padding-bottom: 20px;
                 
                 .fa-regular{
-                position: relative;
-                z-index: 1;
+                    position: relative;
+                    z-index: 1;
 
-                @media (min-width: 1024px) {
-                    position: absolute;
+                    &:hover{
+                        opacity: 0;
+                    }
+
+                    &:active{
+                        opacity: 0;
+                    }
+
+                    @media (min-width: 1024px) {
+                        position: absolute;
                     }
                 }
+                 
                 .fa-solid{
                     position: relative;
-                    right: 20px;
-                    background-color: linear-gradient($pink, $purple);
+                    right: 20px;              
+                    background: linear-gradient($pink, $purple);
                     background-clip: text;
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
+                        
+                    &:hover {
+                        opacity: 1;
+                    }
 
-                @media (min-width: 1024px) {
-                    position: absolute;
+                    &:active {
+                        opacity: 1;
+                    }
+
+                    @media (min-width: 1024px) {
+                        position: absolute;
                     }
                 }
-
 
                 .fa-heart{
                     border: none;
                     background-color: $white;
-                    //position: relative;
-                    //bottom: 30px; left: 240px;
                     font-size: 20px;
             
                     @media (min-width: 1024px) {
@@ -488,7 +502,6 @@ footer{
         }
 
         .lienFooter{
-            // width: 100%;
             text-decoration: none;
             color: $white;  
             margin-bottom: 10px;
