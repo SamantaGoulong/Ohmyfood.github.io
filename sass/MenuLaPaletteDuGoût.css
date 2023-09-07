@@ -66,12 +66,19 @@ table {
   margin-bottom: 5px;
   background-color: #FFFFFF;
 }
+@media (min-width: 768px) {
+  .navbarContent {
+    display: flex;
+    justify-content: initial;
+    gap: 270px;
+  }
+}
 @media (min-width: 1024px) {
   .navbarContent {
     width: auto;
     box-shadow: none;
     display: flex;
-    justify-content: center;
+    gap: 360px;
     align-items: center;
   }
 }
@@ -82,12 +89,16 @@ table {
 }
 @media (min-width: 1024px) {
   .navbarContent .fa-arrow-left {
-    position: relative;
-    right: 400px;
+    font-size: 30px;
   }
 }
 .navbarContent .logoHeader {
   width: 150px;
+}
+@media (min-width: 1024px) {
+  .navbarContent .logoHeader {
+    width: 220px;
+  }
 }
 
 @media (min-width: 1024px) {

@@ -71,12 +71,18 @@ table {
     padding: 10px;
     margin-bottom: 5px;
     background-color: $white;
+    @media (min-width: 768px) {
+        display: flex;
+        justify-content: initial;
+            gap: 270px;
+        }
     
     @media (min-width: 1024px) {
         width: auto;
         box-shadow: none;
         display: flex;
-        justify-content: center;
+        //justify-content: center;
+        gap: 360px;
         align-items: center;
     }
     
@@ -86,15 +92,20 @@ table {
         font-weight: 900;
 
         @media (min-width: 1024px) {
-            position: relative;
-            right: 400px;
-           
+        //     // position: relative;
+        //     // right: 400px;
+        font-size: 30px;   
         }
     }
     
     .logoHeader {
         width: 150px;
+
+        @media (min-width: 1024px) {
+                width: 220px;
+            }
     }
+    
 }
 // fin header
 main {
