@@ -68,7 +68,7 @@ table {
   .navbarContent {
     display: flex;
     justify-content: flex-start;
-    gap: 35%;
+    gap: 40%;
   }
 }
 @media (min-width: 1440px) {
@@ -169,7 +169,7 @@ main .menu .titleHeart .heartCard .fa-regular {
   position: relative;
   z-index: 1;
   left: 20px;
-  background-color: transparent;
+  background-color: #F6F6F6;
 }
 main .menu .titleHeart .heartCard .fa-regular:hover {
   opacity: 0;

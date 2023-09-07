@@ -73,7 +73,7 @@ table {
     @media (min-width: 768px) {
         display: flex;
         justify-content: flex-start;
-            gap: 35%;
+            gap: 40%;
         }
         @media (min-width: 1440px) {
              display: flex;
@@ -184,7 +184,7 @@ main {
                     position: relative;
                     z-index: 1;
                     left: 20px;
-                    background-color: transparent;
+                    background-color: $light-grey;
                     &:hover {
                         opacity: 0;
                     }
