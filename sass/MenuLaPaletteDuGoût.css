@@ -60,7 +60,7 @@ table {
   width: 100%;
   display: flex;
   align-items: center;
-  gap: 20%;
+  gap: 21%;
   margin-top: 25px;
   background-color: #FFFFFF;
 }
@@ -68,7 +68,7 @@ table {
   .navbarContent {
     display: flex;
     justify-content: flex-start;
-    gap: 40%;
+    gap: 35%;
   }
 }
 @media (min-width: 1440px) {
