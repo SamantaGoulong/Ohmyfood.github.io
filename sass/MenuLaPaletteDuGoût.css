@@ -57,35 +57,32 @@ table {
 }
 
 .navbarContent {
-  width: 80%;
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  margin-top: 20px;
-  padding: 10px;
-  margin-bottom: 5px;
+  gap: 20%;
+  margin-top: 25px;
   background-color: #FFFFFF;
 }
 @media (min-width: 768px) {
   .navbarContent {
     display: flex;
-    justify-content: initial;
-    gap: 270px;
+    justify-content: flex-start;
+    gap: 35%;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
   .navbarContent {
-    width: auto;
-    box-shadow: none;
     display: flex;
-    gap: 360px;
-    align-items: center;
+    justify-content: flex-start;
+    gap: 40%;
   }
 }
 .navbarContent .fa-arrow-left {
   color: #000000;
   font-size: 20px;
   font-weight: 900;
+  padding-left: 15px;
 }
 @media (min-width: 1024px) {
   .navbarContent .fa-arrow-left {
@@ -172,6 +169,7 @@ main .menu .titleHeart .heartCard .fa-regular {
   position: relative;
   z-index: 1;
   left: 20px;
+  background-color: transparent;
 }
 main .menu .titleHeart .heartCard .fa-regular:hover {
   opacity: 0;
