@@ -1,4 +1,463 @@
 /* Variables */
+@keyframes loader {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(-100%);
+  }
+  50% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+/* Variables */
+@keyframes loader {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(-100%);
+  }
+  50% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+       v2.0 | 20110126
+       License: none (public domain)
+    */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th,
+td, article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  font-family: "Roboto", sans empattement;
+}
+
+.navbarContent {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 21%;
+  margin-top: 25px;
+  background-color: #FFFFFF;
+}
+@media (min-width: 768px) {
+  .navbarContent {
+    display: flex;
+    justify-content: flex-start;
+    gap: 35%;
+  }
+}
+@media (min-width: 1440px) {
+  .navbarContent {
+    display: flex;
+    justify-content: flex-start;
+    gap: 40%;
+  }
+}
+.navbarContent .fa-arrow-left {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 900;
+  padding-left: 15px;
+}
+@media (min-width: 1024px) {
+  .navbarContent .fa-arrow-left {
+    font-size: 30px;
+  }
+}
+.navbarContent .logoHeader {
+  width: 150px;
+}
+@media (min-width: 1024px) {
+  .navbarContent .logoHeader {
+    width: 220px;
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+main .restaurantsImage {
+  width: 100%;
+  height: 250px;
+  position: relative;
+  top: 25px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (min-width: 1024px) {
+  main .restaurantsImage {
+    height: 450px;
+  }
+}
+main .menu {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #F6F6F6;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media (min-width: 768px) {
+  main .menu {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+@media (min-width: 1024px) {
+  main .menu {
+    width: 70%;
+    margin-left: 150px;
+    margin-right: 150px;
+    align-items: center;
+  }
+}
+main .menu .titleHeart {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+main .menu .titleHeart h1 {
+  font-family: "Shrikhand", cursive;
+  font-size: 24px;
+}
+@media (min-width: 1024px) {
+  main .menu .titleHeart h1 {
+    font-size: 30px;
+    font-weight: 500;
+    padding-top: 20px;
+  }
+}
+main .menu .titleHeart .heartCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+main .menu .titleHeart .heartCard .fa-regular {
+  position: relative;
+  z-index: 1;
+  left: 20px;
+  background-color: #F6F6F6;
+}
+main .menu .titleHeart .heartCard .fa-regular:hover {
+  opacity: 0;
+}
+main .menu .titleHeart .heartCard .fa-regular:active {
+  opacity: 0;
+}
+@media (min-width: 1024px) {
+  main .menu .titleHeart .heartCard .fa-regular {
+    position: relative;
+    top: 20px;
+  }
+}
+main .menu .titleHeart .heartCard .fa-solid {
+  position: relative;
+  background: linear-gradient(#FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+main .menu .titleHeart .heartCard .fa-solid:hover {
+  opacity: 1;
+}
+main .menu .titleHeart .heartCard .fa-solid:active {
+  opacity: 1;
+}
+@media (min-width: 1024px) {
+  main .menu .titleHeart .heartCard .fa-solid {
+    position: relative;
+    top: 20px;
+    right: 10px;
+  }
+}
+main .menu .titleHeart .heartCard .fa-heart {
+  border: none;
+  background-color: #FFFFFF;
+  font-size: 20px;
+}
+@media (min-width: 1024px) {
+  main .menu .titleHeart .heartCard .fa-heart {
+    font-size: 30px;
+  }
+}
+main .menu .subTitleRestaurants {
+  width: 13%;
+  padding-top: 40px;
+  padding-bottom: 7px;
+  border-bottom: solid 3px #99E2D0;
+}
+@media (min-width: 768px) {
+  main .menu .subTitleRestaurants {
+    width: 8%;
+  }
+}
+main .menu .animationAppear .delay-1 {
+  transition: all 1.3s;
+}
+main .menu .animationAppear .delay-2 {
+  transition: all 1.3s 0.5s;
+}
+main .menu .animationAppear .delay-3 {
+  transition: all 1.3s 1s;
+}
+main .menu .animationAppear .lienMenuRestaurants {
+  text-decoration: none;
+  color: #000000;
+  width: 90%;
+  height: 100%;
+  border-radius: 15px;
+}
+main .menu .animationAppear .lienMenuRestaurants .MenuCard {
+  width: 100%;
+  height: 65px;
+  border-radius: 15px;
+  background-color: #FFFFFF;
+  margin-top: 20px;
+  box-shadow: 5px 10px 15px #DBDBDB;
+  display: flex;
+  align-items: center;
+}
+main .menu .animationAppear .lienMenuRestaurants .MenuCard:hover .check {
+  width: 30%;
+}
+main .menu .animationAppear .lienMenuRestaurants .MenuCard:active .check {
+  width: 30%;
+}
+@media (min-width: 1024px) {
+  main .menu .animationAppear .lienMenuRestaurants .MenuCard {
+    width: 550px;
+  }
+}
+main .menu .animationAppear .lienMenuRestaurants .MenuCard .textMenuCard {
+  width: 70%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+main .menu .animationAppear .lienMenuRestaurants .MenuCard .textMenuCard .TitleMenuCard {
+  padding: 10px 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+@media (min-width: 1024px) {
+  main .menu .animationAppear .lienMenuRestaurants .MenuCard .textMenuCard .TitleMenuCard {
+    font-size: 20px;
+  }
+}
+main .menu .animationAppear .lienMenuRestaurants .MenuCard .textMenuCard .subTitleMenuCard {
+  padding: 0px 10px 10px 15px;
+  font-size: 13px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+@media (min-width: 1024px) {
+  main .menu .animationAppear .lienMenuRestaurants .MenuCard .textMenuCard .subTitleMenuCard {
+    font-size: 15px;
+  }
+}
+main .menu .animationAppear .lienMenuRestaurants .MenuCard .price {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .menu .animationAppear .lienMenuRestaurants .MenuCard .price .priceMenu {
+  font-weight: bold;
+}
+@media (min-width: 1024px) {
+  main .menu .animationAppear .lienMenuRestaurants .MenuCard .price .priceMenu {
+    font-size: 20px;
+  }
+}
+main .menu .animationAppear .lienMenuRestaurants .MenuCard .check {
+  width: 0%;
+  height: 100%;
+  background-color: #99E2D0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: all 500ms;
+}
+main .menu .animationAppear .lienMenuRestaurants .MenuCard .check .fa-check {
+  width: 25px;
+  height: 25px;
+  font-size: 20px;
+  color: #99E2D0;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .menu .animationAppear .orderButton {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+main .menu .animationAppear .orderButton .linkButton {
+  border-radius: 30px;
+  border: none;
+  width: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 50px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 14px;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+main .menu .animationAppear .orderButton .linkButton:hover {
+  opacity: 0.85;
+  transition: all 500ms;
+  box-shadow: 2px 2px 15px 2px rgba(124, 124, 124, 0.692);
+}
+@media (min-width: 768px) {
+  main .menu .animationAppear .orderButton .linkButton {
+    width: 150px;
+  }
+}
+
+footer {
+  background-color: #353535;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-top: 25px;
+  padding-bottom: 10px;
+  font-size: 13px;
+}
+@media (min-width: 1024px) {
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+footer .logoFooter {
+  width: 30%;
+  margin-bottom: 20px;
+}
+@media (min-width: 1024px) {
+  footer .logoFooter {
+    width: 10%;
+    margin-top: 20px;
+    margin-right: 50px;
+  }
+}
+footer .lienFoot {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1024px) {
+  footer .lienFoot {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-right: 50px;
+  }
+}
+footer .lienFoot .lienFooter {
+  text-decoration: none;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+@media (min-width: 1024px) {
+  footer .lienFoot .lienFooter {
+    margin-right: 20px;
+  }
+}
+footer .lienFoot .lienFooter .fa-utensils {
+  margin-right: 15px;
+}
+footer .lienFoot .lienFooter .fa-handshake-angle {
+  margin-right: 10px;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
     v2.0 | 20110126
     License: none (public domain)
@@ -68,7 +527,6 @@ table {
   align-items: center;
   flex-direction: column;
   background-image: linear-gradient(to top, #9356DC 10%, #FF79DA 90%);
-  background-image: linear-gradient(to top, #9356DC 10%, #FF79DA 90%);
   z-index: 2;
   animation-name: loader;
   animation-duration: 5s;
@@ -78,27 +536,27 @@ table {
   display: flex;
   margin-bottom: 5px;
 }
-.loader .animation .ball {
+.loader .animation .foodIcone {
   font-size: 20px;
   color: rgb(83, 11, 197);
   animation: bounce 1s infinite;
 }
-.loader .animation .ball:not(:last-child) {
+.loader .animation .foodIcone:not(:last-child) {
   margin-right: 20px;
 }
-.loader .animation .ball:nth-child(2) {
+.loader .animation .foodIcone:nth-child(2) {
   animation-delay: 0.1s;
 }
-.loader .animation .ball:nth-child(3) {
+.loader .animation .foodIcone:nth-child(3) {
   animation-delay: 0.2s;
 }
-.loader .animation .ball:nth-child(4) {
+.loader .animation .foodIcone:nth-child(4) {
   animation-delay: 0.3s;
 }
-.loader .animation .ball:nth-child(5) {
+.loader .animation .foodIcone:nth-child(5) {
   animation-delay: 0.4s;
 }
-.loader .animation .ball:nth-child(6) {
+.loader .animation .foodIcone:nth-child(6) {
   animation-delay: 0.5s;
 }
 .loader .text {

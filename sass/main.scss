@@ -1,5 +1,7 @@
    @import "_var";
    @import "_mixin";
+   @import "_animation";
+   @import "_menus";
    /* http://meyerweb.com/eric/tools/css/reset/ 
        v2.0 | 20110126
        License: none (public domain)
@@ -65,45 +67,44 @@ font-family: $Roboto;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: linear-gradient(to top, #9356DC 10%, #FF79DA 90%);background-image: linear-gradient(to top, #9356DC 10%, #FF79DA 90%);
+    background-image: linear-gradient(to top, #9356DC 10%, #FF79DA 90%);
 
     z-index: 2;
     animation-name: loader;
     animation-duration: 5s;
     animation-fill-mode: forwards;
     
-
     .animation {
         display: flex;
         margin-bottom: 5px;
         
-        .ball {
+        .foodIcone {
             font-size: 20px;
             color: rgb(83, 11, 197);
             animation: bounce 1s infinite;
         }
         
-        .ball:not(:last-child) {
+        .foodIcone:not(:last-child) {
             margin-right: 20px;
         }
         
-        .ball:nth-child(2) {
+        .foodIcone:nth-child(2) {
             animation-delay: 0.1s;
         }
         
-        .ball:nth-child(3) {
+        .foodIcone:nth-child(3) {
             animation-delay: 0.2s;
         }
         
-        .ball:nth-child(4) {
+        .foodIcone:nth-child(4) {
             animation-delay: 0.3s;
         }
         
-        .ball:nth-child(5) {
+        .foodIcone:nth-child(5) {
             animation-delay: 0.4s;
         }
         
-        .ball:nth-child(6) {
+        .foodIcone:nth-child(6) {
             animation-delay: 0.5s;
         }
     }
@@ -128,12 +129,10 @@ font-family: $Roboto;
 @keyframes bounce {
     0% {
         transform: translateY(-100%);
-        
     }
 
     50% {
         transform: translateY(0%);
-        
     }
 
     100% {
@@ -143,56 +142,53 @@ font-family: $Roboto;
 }
 //fin animation loader 
 
-
 // Debut header
 .navbarContent {
-   width: 100%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 20px;
     
-        .logoImage {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 0px 0 20px 0;
-            background-color:$white;
-            box-shadow: 0px 6px 6px $dark-grey-header;
+    .logoImage {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 0 20px 0;
+        background-color:$white;
+        box-shadow: 0px 6px 6px $dark-grey-header;
            
-            @media (min-width: 768px) {
-                width: auto;
-                box-shadow: none;
-            }
-
-                .logoHeader {
-                        width: 50%;
-                }
-                        
+        @media (min-width: 768px) {
+            width: auto;
+            box-shadow: none;
         }
 
-        .searchContent {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            padding: 10px;
+        .logoHeader {
+            width: 50%;
+        }         
+    }
+
+    .searchContent {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        background-color: $light-grey-header;
+           
+        .localisation-icone {
+            color: $dark-grey;
+        }
+
+        input {
+            border: none;
             background-color: $light-grey-header;
-           
-            .localisation-icone {
-                    color: $dark-grey;
-            }
-
-            input {
-                    border: none;
-                    background-color: $light-grey-header;
-                    text-align: center;
-                    color: black;
-                    font-weight: bold;
-                    font-size: 15px;
-            
-            }
+            text-align: center;
+            color: black;
+            font-weight: bold;
+            font-size: 15px;
         }
+    }
 }
 
 
@@ -205,56 +201,52 @@ font-family: $Roboto;
     padding-bottom: 20px;
 
     @media (min-width: 768px) {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1{
+        margin-top: 30px; 
+        margin-left: 50px;
+        margin-right: 50px;
+        font-weight: bold;
+        font-size: 20px;
+        text-align: center;
+
+        @media (min-width: 1024px) {
+            font-size: 30px;
         }
+    }
 
-        h1{
-            margin-top: 30px; 
-            margin-left: 50px;
-            margin-right: 50px;
-            font-weight: bold;
-            font-size: 20px;
-            text-align: center;
+    .underNavText{
+        margin-top: 20px;
+        text-align: center;
+    }
 
-            @media (min-width: 1024px) {
-                    font-size: 30px;
-                }
-        }
-
-        .underNavText{
-            margin-top: 20px;
-            text-align: center;
-        }
-
-        .underNavButton{
-            text-decoration: none;
-            margin-top: 20px;
-            margin-bottom: 30px;
-            @include gradientButton;
-            display: flex;
-            align-items: center;
-            //box-shadow: 5px 10px 15px $dark-grey-header;
-           
-            //transition-property: transform;
-            //transition-duration: 400ms;
+    .underNavButton{
+        text-decoration: none;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        @include gradientButton;
+        display: flex;
+        align-items: center;
             
-            &:hover{
-                opacity: 0.85;
-                transition: all 500ms;
-                box-shadow: 2px 2px 15px 2px rgba(124, 124, 124, 0.692);
-            }
-
-            @media (min-width: 1024px) {
-                   width: auto;
-                   margin: 0;
-                   margin-top: 20px;
-                   display:flex ;
-                   align-items: center;
-                   justify-content: center;
-                }
+        &:hover{
+            opacity: 0.85;
+            transition: all 500ms;
+            box-shadow: 2px 2px 15px 2px rgba(124, 124, 124, 0.692);
         }
+
+        @media (min-width: 1024px) {
+            width: auto;
+            margin: 0;
+            margin-top: 20px;
+            display:flex ;
+            align-items: center;
+            justify-content: center;
+        }
+    }
 }
 // fin header
 
@@ -263,12 +255,11 @@ font-family: $Roboto;
     margin-top: 50px;
     margin-bottom: 50px;
 
-     @media (min-width: 1024px) {
+    @media (min-width: 1024px) {
     padding-left: 100px;
     padding-right: 100px;
     }
   
-
     .fonctionnementTitle{
     font-size: 20px;
     font-weight: bold;
@@ -287,20 +278,20 @@ font-family: $Roboto;
             }
         
         .number {
-                background-color: $purple;
-                width: 25px;
-                height: 25px;
-                border-radius: 50px;
-                color: $white;
-                font-size: 14px;
-                border: none;
-                position: relative;
-                top: 45px;
-                right: 140px;
+            background-color: $purple;
+            width: 25px;
+            height: 25px;
+            border-radius: 50px;
+            color: $white;
+            font-size: 14px;
+            border: none;
+            position: relative;
+            top: 45px;
+            right: 140px;
         
-                @media (min-width: 1024px) {
-                    left: 15px ; top: 0px;
-                }
+            @media (min-width: 1024px) {
+                left: 15px ; top: 0px;
+            }
         }
 
         .btnFonctionnement{
@@ -315,8 +306,8 @@ font-family: $Roboto;
             box-shadow: 5px 10px 15px $dark-grey-header;
             
             @media (min-width: 1024px) {
-                    width: 33%;
-                }
+                width: 33%;
+            }
 
             .fonctionnementIcone {
                 padding-right: 30px;
@@ -329,12 +320,9 @@ font-family: $Roboto;
         }
     }
 }
-
-
 // fin section fonctionnement
 
 // début section restaurants
-
 .restaurants{
 background-color:$light-grey;
 padding-top: 40px;
@@ -343,13 +331,13 @@ padding-right: 15px;
 padding-bottom: 40px;
 
 @media (min-width: 1024px) {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding-left: 100px;
-        padding-right: 100px;
-        padding-bottom: 0;
-    }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 0;
+}
 
     .restaurantsTitle{
         font-size: 20px;
@@ -360,15 +348,16 @@ padding-bottom: 40px;
                 width: 100%;
             }
     }
+
         .lienRestaurantsCard {
         text-decoration: none;
         color: $dark;
 
         @media (min-width: 1024px) {
             width: 45%;
-             margin-bottom: 30px;
-                        
+            margin-bottom: 30px;        
         }
+
         .restaurantCard{
             background-color:$white;
             border-radius: 20px;
@@ -421,6 +410,7 @@ padding-bottom: 40px;
                     position: relative;
                     z-index: 1;
                     background-color: transparent;
+
                     &:hover{
                         opacity: 0;
                     }
@@ -468,7 +458,6 @@ padding-bottom: 40px;
         }
     }
 }
-
 // fin section restaurants
 
 // début footer
@@ -501,10 +490,10 @@ footer{
         flex-direction: column;
         
         @media (min-width: 1024px) {
-                display: flex;
-                flex-direction: row;
-                margin-top: 30px;
-                margin-right: 50px;
+            display: flex;
+            flex-direction: row;
+            margin-top: 30px;
+            margin-right: 50px;
         }
 
         .lienFooter{
@@ -527,5 +516,3 @@ footer{
     }        
 }
 // fin footer
-
-//  
