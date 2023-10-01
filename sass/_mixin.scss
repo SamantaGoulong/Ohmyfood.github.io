@@ -1,6 +1,6 @@
 // Mixins
 
-@mixin gradientButton{
+@mixin gradientButton {
         border-radius: 30px;
         border: none;
         width: auto;
@@ -13,28 +13,29 @@
         font-size: 14px;
 }
 
-@mixin buttonNew{
+@mixin buttonNew {
         border: none;
-                color: $dark-green;
-                font-weight: bold;
-                background-color: $light-green;
-                border-radius: 2px;
-                height: 20px;
-                padding: 5px;
-               
+        color: $dark-green;
+        font-weight: bold;
+        background-color: $light-green;
+        border-radius: 2px;
+        height: 20px;
+        padding: 5px;
+
 }
 
-@mixin navbarContent{
+@mixin navbarContent {
         width: 80%;
         display: flex;
         align-items: center;
         justify-content: space-around;
-        margin-top: 20px;          
+        margin-top: 20px;
         padding: 10px;
         margin-bottom: 5px;
-        background-color:aqua;}
-                        
-        
+        background-color: aqua;
+}
+
+
 //         @media (min-width: 1024px) {
 //                 width: auto;
 //                 box-shadow: none;
@@ -55,84 +56,84 @@
 //                 height: 230px;
 //                 position: relative;
 //                 top: 25px;
-        
+
 //         }
 
 // @mixin menu{
-      
-                        // background-color: $light-grey;
-                        // border-top-left-radius: 30px;
-                        // border-top-right-radius: 30px;
-                        // padding-left: 10px;
-                        // padding-right: 10px;
-                        // position: relative;
-                        // // bottom: 50px;
-                        
-        
-                        // h1 {
-                        //         font-family: $Shrikhand;
-                        //         font-size: 24px;
-                        //         padding-top: 10px;
-                        //         position: relative;
-                        //         top: 23px;
-                        // }
-        
-                        // .heartCard {
-                        //         @include heartCard;
-        
-                        // }
-        
-                        // .subTitleRestaurants {
-                        //         padding-top: 40px;
-                        //         padding-bottom: 7px;
-                        //         border-bottom: solid 3px $light-green ;
-                        //         width: 13%;
-                        // }
-        
-                        // #starter {
-                        //         padding-top: 60px;
-                        // }
-        
-                        // .lienMenuRestaurants {
-                        //         text-decoration: none;
-                        //         color: $dark;
-                        //         width: 90%;
-                        //         height: 100%;
-                        //         border-radius: 15px;
-        
-                        //         .MenuCard {
-                        //                 width: 100%;
-                        //                 height: 65px;
-                        //                 border-radius: 15px;
-                        //                 background-color: $white;
-                        //                 margin-top: 20px;
-                        //                 box-shadow: 5px 10px 15px $dark-grey-header;
-        
-                        //                 .TitleMenuCard {
-                        //                         padding: 10px 15px;
-                        //                 }
-        
-                        //                 .subTitleMenuCard {
-                        //                         padding: 0px 10px 10px 15px;
-                        //                         font-size: 13px;
-        
-                        //                         .priceMenu {
-                        //                                 font-weight: bold;
-                        //                                 position: absolute;
-                        //                                 right: 20px;
-                        //                         }
-                        //                 }
-                        //         }
-                        // }
-        
-                        // .orderButton {
-                        //         @include orderButton;
-        
-                        //         .linkButton {
-                        //                 @include linkButton;
-        
-                        //         }
-                        // }
+
+// background-color: $light-grey;
+// border-top-left-radius: 30px;
+// border-top-right-radius: 30px;
+// padding-left: 10px;
+// padding-right: 10px;
+// position: relative;
+// // bottom: 50px;
+
+
+// h1 {
+//         font-family: $Shrikhand;
+//         font-size: 24px;
+//         padding-top: 10px;
+//         position: relative;
+//         top: 23px;
+// }
+
+// .heartCard {
+//         @include heartCard;
+
+// }
+
+// .subTitleRestaurants {
+//         padding-top: 40px;
+//         padding-bottom: 7px;
+//         border-bottom: solid 3px $light-green ;
+//         width: 13%;
+// }
+
+// #starter {
+//         padding-top: 60px;
+// }
+
+// .lienMenuRestaurants {
+//         text-decoration: none;
+//         color: $dark;
+//         width: 90%;
+//         height: 100%;
+//         border-radius: 15px;
+
+//         .MenuCard {
+//                 width: 100%;
+//                 height: 65px;
+//                 border-radius: 15px;
+//                 background-color: $white;
+//                 margin-top: 20px;
+//                 box-shadow: 5px 10px 15px $dark-grey-header;
+
+//                 .TitleMenuCard {
+//                         padding: 10px 15px;
+//                 }
+
+//                 .subTitleMenuCard {
+//                         padding: 0px 10px 10px 15px;
+//                         font-size: 13px;
+
+//                         .priceMenu {
+//                                 font-weight: bold;
+//                                 position: absolute;
+//                                 right: 20px;
+//                         }
+//                 }
+//         }
+// }
+
+// .orderButton {
+//         @include orderButton;
+
+//         .linkButton {
+//                 @include linkButton;
+
+//         }
+// }
 
 
 
@@ -152,26 +153,26 @@
 
 
 
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// }
 
 // @mixin heartCard{
 //         border: none;
@@ -179,7 +180,7 @@
 //         position: absolute;
 //         left: 270px;
 //         font-size: 20px;
-        
+
 //         @media (min-width: 1024px) {
 //                 left: 90%;
 //                 }
@@ -191,7 +192,7 @@
 //                 color: $dark;
 //                 width: 90%;
 //                 border-radius: 15px;
-        
+
 //                 .MenuCard {
 //                         width: 100%;
 //                         height: 65px;
@@ -199,16 +200,16 @@
 //                         background-color: $white;
 //                         margin-top: 20px;
 //                         box-shadow: 5px 10px 15px $dark-grey-header;
-        
+
 //                         .TitleMenuCard {
 //                         padding: 10px 15px;
 
 //                         }
-        
+
 //                         .subTitleMenuCard {
 //                                 padding: 0px 10px 10px 15px;
 //                                 font-size: 14px;
-        
+
 //                                 .priceMenu {
 //                                         position: absolute;
 //                                         right: 15px;

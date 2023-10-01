@@ -1,43 +1,45 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Shrikhand&display=swap"
-            rel="stylesheet">
-        <link rel="stylesheet" href="./CSS/main.css">
-        <title>Ohmyfood</title>
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Shrikhand&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/main.css">
+    <title>Ohmyfood</title>
+
 </head>
 
 <body>
-<!-- Début animation loader-->
+    <!-- Début animation loader-->
     <div class="loader">
         <div class="animation">
-            <div class="ball"><i class="fa-solid fa-bowl-food"></i></div>
-            <div class="ball"><i class="fa-solid fa-burger"></i></div>
-            <div class="ball"><i class="fa-solid fa-pizza-slice"></i></div>
-            <div class="ball"><i class="fa-solid fa-cheese"></i></div>
-            <div class="ball"><i class="fa-solid fa-hotdog"></i></div>
-            <div class="ball"><i class="fa-solid fa-ice-cream"></i></div>
+            <div class="foodIcone"><i class="fa-solid fa-bowl-food"></i></div>
+            <div class="foodIcone"><i class="fa-solid fa-burger"></i></div>
+            <div class="foodIcone"><i class="fa-solid fa-pizza-slice"></i></div>
+            <div class="foodIcone"><i class="fa-solid fa-cheese"></i></div>
+            <div class="foodIcone"><i class="fa-solid fa-hotdog"></i></div>
+            <div class="foodIcone"><i class="fa-solid fa-ice-cream"></i></div>
         </div>
         <div class="text">Chargement...</div>
     </div>
-<!-- Fin animation loader -->
+    <!-- Fin animation loader -->
 
     <div class="main-container">
-<!-- Début header -->
+        <!-- Début header -->
         <header class="navbar">
             <nav class="navbarContent">
                 <div class="logoImage">
-                    <img class="logoHeader" src="./ImagesEtTextesOhmyfood/images/logo/ohmyfood.png" alt="logo ohmy food">
+                    <img class="logoHeader" src="./ImagesEtTextesOhmyfood/images/logo/ohmyfood.png"
+                        alt="logo ohmy food">
                 </div>
                 <div class="searchContent">
                     <form class="navLocalisation">
@@ -47,45 +49,50 @@
                 </div>
             </nav>
         </header>
-<!-- Fin header -->
+        <!-- Fin header -->
 
-<!-- Début sous-nav -->
+        <!-- Début sous-nav -->
         <main>
             <section class="underNav">
                 <h1>Réservez le menu qui vous convient</h1>
                 <p class="underNavText">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
                 <a href="#" class="underNavButton">Explorer nos restaurants</a>
             </section>
-<!-- Fin sous-nav -->
+            <!-- Fin sous-nav -->
 
-<!-- Début section fonctionnement -->
+            <!-- Début section fonctionnement -->
             <section class="fonctionnement">
                 <h2 class="fonctionnementTitle">Fonctionnement</h2>
                 <div class="fonctionnementButton">
-                        <button class="number">1</button>
-                        <button class="btnFonctionnement"><i class="fa-solid fa-mobile-screen-button fonctionnementIcone"></i>Choisissez un restaurant</button>
-                        <button class="number">2</button>
-                        <button class="btnFonctionnement"><i class="fa-solid fa-list-ul fonctionnementIcone"></i>Composez votre menu</button>
-                        <button class="number">3</button>
-                        <button class="btnFonctionnement"><i class="fa-solid fa-store fonctionnementIcone"></i>Dégustez au restaurant</button>
+                    <button class="number">1</button>
+                    <button class="btnFonctionnement"><i
+                            class="fa-solid fa-mobile-screen-button fonctionnementIcone"></i>Choisissez un
+                        restaurant</button>
+                    <button class="number">2</button>
+                    <button class="btnFonctionnement"><i class="fa-solid fa-list-ul fonctionnementIcone"></i>Composez
+                        votre menu</button>
+                    <button class="number">3</button>
+                    <button class="btnFonctionnement"><i class="fa-solid fa-store fonctionnementIcone"></i>Dégustez au
+                        restaurant</button>
                 </div>
             </section>
-<!-- Fin section fonctionnement -->
+            <!-- Fin section fonctionnement -->
 
-<!-- Début section restaurant -->
+            <!-- Début section restaurant -->
             <section class="restaurants">
                 <h2 class="restaurantsTitle">Restaurants</h2>
                 <a href="./restaurants/MenuLaPaletteDuGoût.html" class="lienRestaurantsCard">
                     <article class="card restaurantCard">
-                        <img class="restaurantsImage" 
-                            src="./ImagesEtTextesOhmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
+                        <img class="restaurantsImage"
+                            src="./ImagesEtTextesOhmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                            alt="">
                         <div class="buttonNew buttonNew1">Nouveau</div>
                         <h3 class="subTitleRestaurants">La palette du goût</h3>
                         <p class="textRestaurants">Ménilmontant</p>
                         <div class="heartCard">
                             <i class="fa-regular fa-heart"></i>
                             <i class="fa-solid fa-heart"></i>
-                        </div>      
+                        </div>
                     </article>
                 </a>
                 <a href="./restaurants/LaNoteEnchantée.html" class="lienRestaurantsCard">
@@ -104,7 +111,8 @@
                 <a href="./restaurants/ALaFrancaise.html" class="lienRestaurantsCard">
                     <article class="card restaurantCard">
                         <img class="restaurantsImage"
-                            src="./ImagesEtTextesOhmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
+                            src="./ImagesEtTextesOhmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                            alt="">
                         <h3 class="subTitleRestaurants">À la française</h3>
                         <p class="textRestaurants">Cité Rouge</p>
                         <div class="heartCard">
@@ -116,7 +124,8 @@
                 <a href="./restaurants/LeDéliceDesSens.html" class="lienRestaurantsCard">
                     <article class="card restaurantCard">
                         <img class="restaurantsImage"
-                            src="./ImagesEtTextesOhmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">
+                            src="./ImagesEtTextesOhmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                            alt="">
                         <h3 class="subTitleRestaurants">Le délice des sens</h3>
                         <p class="textRestaurants">Folie-Méricourt</p>
                         <div class="heartCard">
@@ -125,22 +134,23 @@
                         </div>
                     </article>
                 </a>
-                
+
             </section>
         </main>
-<!-- Fin section restaurant -->
+        <!-- Fin section restaurant -->
 
-<!-- Début footer -->
+        <!-- Début footer -->
         <footer>
             <img class="logoFooter" src="./ImagesEtTextesOhmyfood/images/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
             <div class="lienFoot">
                 <a href="#" class="lienFooter"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a>
                 <a href="#" class="lienFooter"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a>
                 <a href="#" class="lienFooter">Mentions légales</a>
-                <a href="#" class="lienFooter">Contact</a>
+                <a href="mailto:ohmyfood@gmail.com" class="lienFooter">Contact</a>
             </div>
         </footer>
-<!-- Fin footer -->
+        <!-- Fin footer -->
     </div>
 </body>
+
 </html>
